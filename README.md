@@ -1,4 +1,4 @@
-# Cat-s-VRChat-Tools
+# Cat's VRChat Tools
 Just a couple of editor script, I'll maybe make some world script aswell.
 
 ### [AnimatorCreation](<https://github.com/Catalyss/Cat-s-VRChat-Tools/blob/main/Avatar%20Tools/AnimatorCreator.cs>)
