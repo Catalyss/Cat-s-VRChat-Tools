@@ -470,6 +470,8 @@ public class AnimatorCreator : EditorWindow
             };
 
             animatorController.AddLayer(layer);
+            animatorController.AddParameter(ParmName, UnityEngine.AnimatorControllerParameterType.Bool);
+
             
             var parm = new VRCExpressionParameters.Parameter
             {
@@ -486,7 +488,6 @@ public class AnimatorCreator : EditorWindow
             }
 
             if (AssetDatabase.GetAssetPath(animatorController) != "") AssetDatabase.AddObjectToAsset(layer.stateMachine, AssetDatabase.GetAssetPath(animatorController));
-            animatorController.AddParameter(ParmName, UnityEngine.AnimatorControllerParameterType.Bool);
             var OnState = animatorController.layers[animatorController.layers.Length - 1].stateMachine.AddState(ToggleName + " On");
             var OffState = animatorController.layers[animatorController.layers.Length - 1].stateMachine.AddState(ToggleName + " Off");
             OnState.motion = clip;
