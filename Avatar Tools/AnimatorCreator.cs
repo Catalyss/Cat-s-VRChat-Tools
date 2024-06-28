@@ -109,6 +109,8 @@ public class AnimatorCreator : EditorWindow
 
     void CreateController()
     {
+    Debug.Log("In need of a slight fix");
+    return;
         VRCAvatarDescriptors.GetComponent<VRCAvatarDescriptor>().customExpressions = true;
         VRCExpressionParameters newParameters = ScriptableObject.CreateInstance<VRCExpressionParameters>();
         newParameters.parameters = Array.Empty<VRCExpressionParameters.Parameter>();
